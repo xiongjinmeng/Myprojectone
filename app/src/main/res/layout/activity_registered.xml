@@ -7,22 +7,21 @@
     android:orientation="vertical"
     android:background="@drawable/asdf"
     android:padding="20dp"
-    tools:context=".MainActivity">
-
+    tools:context=".RegisteredActivity">
     <RelativeLayout
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp">
         <ImageView
-            android:id="@+id/image_logintop"
+            android:id="@+id/image_registeredtop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:background="@drawable/login_icon_phone_n_hdpi"/>
         <EditText
-            android:id="@+id/edit_login_name"
-            android:layout_toRightOf="@id/image_logintop"
+            android:id="@+id/edit_registered_name"
+            android:layout_toRightOf="@id/image_registeredtop"
             android:layout_width="match_parent"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
@@ -36,6 +35,45 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#ffffff"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/image_validation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/login_icon_verification_code_n_hdpi"
+            />
+        <EditText
+            android:id="@+id/edit_validation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="验证码"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:textColorHint="#ffffff"
+            android:layout_toLeftOf="@id/text_validation"
+            android:layout_toRightOf="@id/image_validation"/>
+        <TextView
+            android:id="@+id/text_validation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="获取验证码"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"/>
 
     <RelativeLayout
         android:layout_marginTop="10dp"
@@ -43,14 +81,14 @@
         android:layout_height="wrap_content"
         android:padding="5dp">
         <ImageView
-            android:id="@+id/image_loginl"
+            android:id="@+id/image_registered_prass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:background="@drawable/login_icon_lock_n_hdpi"
             />
         <EditText
-            android:id="@+id/edit_login_prass"
+            android:id="@+id/edit_registered_prass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="登录密码"
@@ -60,10 +98,10 @@
             android:layout_marginRight="5dp"
             android:background="@null"
             android:textColorHint="#ffffff"
-            android:layout_toRightOf="@id/image_loginl"
-            android:layout_toLeftOf="@id/image_login"/>
+            android:layout_toRightOf="@id/image_registered_prass"
+            android:layout_toLeftOf="@id/image_shop_registered"/>
         <ImageView
-            android:id="@+id/image_login"
+            android:id="@+id/image_shop_registered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -81,30 +119,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <CheckBox
-            android:id="@+id/check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="记住密码"
-            android:textColor="#ffffff"/>
         <Space
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <TextView
-            android:id="@+id/text_jump_registered"
+            android:id="@+id/text_an_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="快速注册"
+            android:text="已有账户?"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/text_immediately_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即登录"
+            android:layout_marginLeft="10dp"
             android:textColor="#ffffff"/>
 
     </LinearLayout>
     <Button
-        android:id="@+id/bun_login"
+        android:id="@+id/bun_registered"
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="登录"
+        android:text="注册"
         android:background="@drawable/shape_oel_button"
         android:textColor="#FF8895"/>
+
 </LinearLayout>
